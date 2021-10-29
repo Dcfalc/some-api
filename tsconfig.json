@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es6",
+    "lib": ["es5", "es6"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    /* Modules */
+    "module": "commonjs",
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@entities/*": ["src/entities/*"],
+      "@factories/*": ["src/factories/*"],
+      "@services/*": ["src/services/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@configs/*": ["src/configs/*"],
+      "@routes/*": ["src/routes/*"],
+      "@helpers/*": ["src/helpers/*"]
+    },
+    "resolveJsonModule": true,
+
+    /* JavaScript Support */
+    "sourceMap": true,
+    "outDir": "dist",
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": [".vscode", "node_modules", "dist", "notes"]
+}
